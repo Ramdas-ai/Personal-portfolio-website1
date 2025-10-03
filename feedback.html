@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .feedback-container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            animation: fadeIn 1s ease;
+        }
+        
+        .feedback-container h2 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .feedback-container p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        
+        .feedback-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .feedback-form input,
+        .feedback-form textarea,
+        .feedback-form button {
+            font-size: 16px;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+        
+        .feedback-form input:focus,
+        .feedback-form textarea:focus {
+            border-color: #6a11cb;
+            box-shadow: 0 0 6px rgba(106, 17, 203, 0.4);
+        }
+        
+        .feedback-form textarea {
+            resize: none;
+            min-height: 120px;
+        }
+        
+        .feedback-form button {
+            background: #6a11cb;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+        
+        .feedback-form button:hover {
+            background: #2575fc;
+            transform: scale(1.05);
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="feedback-container">
+        <h2>💬 Feedback Form</h2>
+        <p>We’d love to hear your thoughts and suggestions about this project!</p>
+
+        <form class="feedback-form" action="mailto:ramdaschaurasiya82@gmail.com" method="POST" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Write your feedback here..." required></textarea>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+</body>
+
+</html>

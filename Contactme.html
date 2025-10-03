@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .contact-container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 420px;
+            width: 100%;
+        }
+        
+        .contact-container h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .contact-btn {
+            display: block;
+            margin: 12px auto;
+            padding: 14px 25px;
+            width: 85%;
+            background: #6a1b9a;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        
+        .contact-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .contact-btn.call {
+            background: #00796b;
+        }
+        
+        .contact-btn.call:hover {
+            background: #009688;
+        }
+        
+        .contact-btn.mail {
+            background: #d32f2f;
+        }
+        
+        .contact-btn.mail:hover {
+            background: #f44336;
+        }
+        
+        .info {
+            margin-top: 18px;
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .contact-btn span {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contact-container">
+        <h2>📞 Contact Me</h2>
+
+        <!-- Call Buttons -->
+        <a class="contact-btn call" href="tel:+919827473760"><span>📱</span>Call Me: +977 98274 73760</a>
+        <a class="contact-btn call" href="tel:+919695511142"><span>📞</span>Call Me: +91 96955 11142</a>
+
+        <!-- Email Button -->
+        <a class="contact-btn mail" href="mailto:ramdaschaurasiya82@gmail.com"><span>✉️</span>Send Email</a>
+
+        <!-- Info Section -->
+        <div class="info">
+            <p>📧 ramdaschaurasiya82@gmail.com</p>
+            <p>📱 +91 98274 73760</p>
+            <p>📱 +91 96955 11142</p>
+        </div>
+    </div>
+</body>
+
+</html>
